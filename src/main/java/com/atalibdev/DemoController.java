@@ -19,4 +19,9 @@ public class DemoController {
                 1, "Testing", 200
         )), HttpStatus.OK);
     }
+
+    @GetMapping("/message")
+    public String message() {
+        return "Message received";
+    }
 }
